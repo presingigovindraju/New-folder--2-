@@ -1,0 +1,357 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* SECTION THREE */
+.comfort-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  background: #ffffff;
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* LEFT VIDEO (Desktop only) */
+.comfort-left {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.comfort-video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Hide mobile video by default (desktop view) */
+.mobile-video {
+  display: none;
+}
+
+/* RIGHT CONTENT */
+.comfort-right {
+  width: 45%;
+  text-align: left;
+}
+
+.comfort-right h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #272727;
+}
+
+.comfort-right p {
+  font-size: 32px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+/* BUTTON */
+.preorder-btn {
+  background: #272727;
+  color: #E7CD7E;
+  border: none;
+  padding: 11px 71px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  width: 60%;
+  display: block;
+  text-align: center;
+}
+
+.preorder-btn:hover {
+  opacity: 0.85;
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  /* remove <br> on mobile */
+  .comfort-right h2 br {
+    display: none;
+  }
+
+  .comfort-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  /* Hide desktop video */
+  .comfort-left {
+    display: none;
+  }
+
+  /* Show mobile video */
+  .mobile-video {
+    display: block;
+    margin: 15px 0;
+  }
+
+  /* Center all inside content */
+  .comfort-right {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .comfort-right h2 {
+    font-size: 32px;
+  }
+
+  .comfort-right p {
+    font-size: 22px;
+    margin: 0 auto 20px;
+  }
+
+  /* Center button only on mobile */
+  .preorder-btn {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 22px;
+    padding: 12px 30px;
+  }
+}
+
+
+
+
+
+/* differentcanerodsection */
+.colors-section {
+  background: #242424;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+}
+
+/* UPDATED H2 WITH FIGMA DESIGN */
+.colors-section h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 40px;
+  
+}
+
+/* Color Names Row */
+.color-names {
+  display: flex;
+  justify-content: space-between;
+
+  width: 90vw;                /* scales with screen */
+  max-width: 1070px;          /* matches desktop image alignment */
+
+  margin-left: 50%;
+  transform: translateX(-50%); /* center just like image */
+
+  margin-bottom: 20px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  opacity: 0.9;
+  padding: 0 1.5%;            /* smooth spacing on all screens */
+}
+
+/* FULL-WIDTH IMAGE SECTION */
+.color-bars {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.color-bars img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0;
+  background-color: white;
+  border: none;
+}
+
+/* ============================ */
+/* MOBILE (≤ 768px) */
+/* ============================ */
+@media (max-width: 768px) {
+
+  .colors-section h2 {
+    font-size: 28px;          /* scaled down but still bold */
+  }
+
+  .color-names {
+    width: 100vw;                 
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    font-size: 12px;
+    padding: 0 8%;
+  }
+
+  .color-bars {
+    width: 100vw;
+  }
+
+  .color-bars img {
+    width: 100%;
+  }
+}
+
+/* ============================ */
+/* EXTRA SMALL MOBILE (≤ 480px) */
+/* ============================ */
+@media (max-width: 480px) {
+
+  .colors-section h2 {
+    font-size: 22px;
+  }
+
+  .color-names {
+    font-size: 9px;
+  }
+}
+
+
+
+
+
+
+/* youmayalsolike */
+/* youmayalsolike */
+.slider-container {
+  background: #242424;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  color: white;
+  font-family: sans-serif;
+  padding: 40px 0;
+}
+
+.slider-title {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-size: 55px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 15px;
+  padding: 0 0 10px 0;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 480px;
+  height: 465px;
+  background: #333;
+  border-radius: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow svg {
+  width: 50px;
+  height: 50px;
+  stroke: white;
+  transition: 0.2s ease-in-out;
+}
+
+.arrow:hover svg {
+  stroke: #ccc;
+}
+
+.arrow.left { left: 30px; }
+.arrow.right { right: 30px; }
+
+/* ---------------------------------------------------------- */
+/* ⭐ Tablet: max-width 1024px */
+@media (max-width: 1024px) {
+  .slider-title { font-size: 40px; }
+  .card { min-width: 380px; height: 380px; }
+  .arrow svg { width: 40px; height: 40px; }
+  .arrow.left { left: 20px; }
+  .arrow.right { right: 20px; }
+}
+
+/* ---------------------------------------------------------- */
+/* ⭐ Mobile Large: max-width 768px */
+@media (max-width: 768px) {
+  .slider-title { font-size: 32px; }
+  .card { min-width: 300px; height: 300px; }
+  .arrow { display: none; } /* hide arrows */
+}
+
+/* ---------------------------------------------------------- */
+/* ⭐ Mobile Small: max-width 480px */
+@media (max-width: 480px) {
+  .slider-title { font-size: 26px; }
+  .card { min-width: 220px; height: 220px; }
+  .arrow { display: none; } /* hide arrows */
+}
